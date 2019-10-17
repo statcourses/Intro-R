@@ -3,11 +3,13 @@
 Introduction to R: Osama Mahmoud
 --------------------------------
 
-<img src="https://raw.githubusercontent.com/statcourses/Intro-R/master/Images/R.png" alt="R logo" style="width:5.0%" />
+<img src="https://raw.githubusercontent.com/statcourses/Intro-R/master/Images/R.png" width = 100 height = 100>
 
-This page provides materials, practical questionas and answers of the **Introduction to R course** held at the [Department of Mathematical Sciences, Univeristy of Essex](https://www.essex.ac.uk/departments/mathematical-sciences) as part of the *MA902: Research Methods* module for the Master degree in data science - October 2019.
+![R logo](https://raw.githubusercontent.com/statcourses/Intro-R/master/Images/R.png)
 
--   **Time table**: The [time table](https://raw.githubusercontent.com/statcourses/Intro-R/master/Time_Table.pdf) and course structure can be viewed from here.
+This page provides materials, practical questionas and answers of the **Introduction to R course** held at the <a href="https://www.essex.ac.uk/departments/mathematical-sciences" target="_blank">Department of Mathematical Sciences, Univeristy of Essex</a> as part of the *MA902: Research Methods* module for the Master degree in data science - October 2019.
+
+-   **Time table**: The [time table](https://raw.githubusercontent.com/statcourses/Intro-R/master/Time_table.pdf) and course structure can be viewed from here.
 
 -   **PDF version of course slides**: [The course slides](https://raw.githubusercontent.com/statcourses/Intro-R/master/slides.pdf) is made available here.
 
