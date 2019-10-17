@@ -3,7 +3,7 @@
 Introduction to R: Osama Mahmoud
 --------------------------------
 
-![R logo](https://raw.githubusercontent.com/statcourses/Intro-R/master/Images/R.png)
+<img src="https://raw.githubusercontent.com/statcourses/Intro-R/master/Images/R.png" alt="R logo" style="width:15.0%" />
 
 This page provides materials, practical questionas and answers of the **Introduction to R course** held at the [Department of Mathematical Sciences, Univeristy of Essex](https://www.essex.ac.uk/departments/mathematical-sciences) as part of the *MA902: Research Methods* module for the Master degree in data science - October 2019.
 
