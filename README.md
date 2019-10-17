@@ -1,1 +1,37 @@
-Intro-R
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+Introduction to R: Osama Mahmoud
+--------------------------------
+
+![R logo](https://raw.githubusercontent.com/statcourses/Intro-R/master/Images/R.png)
+
+This page provides materials, practical questionas and answers of the **Introduction to R course** held at the [Department of Mathematical Sciences, Univeristy of Essex](https://www.essex.ac.uk/departments/mathematical-sciences) as part of the *MA902: Research Methods* module for the Master degree in data science - October 2019.
+
+-   **Time table**: The [time table](https://raw.githubusercontent.com/statcourses/Intro-R/master/Time_Table.pdf) and course structure can be viewed from here.
+
+-   **PDF version of course slides**: [The course slides](https://raw.githubusercontent.com/statcourses/Intro-R/master/slides.pdf) is made available here.
+
+-   **The R script**: [The R script](https://raw.githubusercontent.com/statcourses/Intro-R/master/Rscript.R) used for the course slides is made available here.
+
+-   **Reference card**: The [R reference card](https://raw.githubusercontent.com/statcourses/Intro-R/master/Refcard.pdf) summarises some useful basic commands, concepts and functions that are relevant to the course.
+
+### Practical questions and answers
+
+-   [*Practical 1: Basic concepts of R*](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_1/Practical_Intro-1.pdf) can be downloaded from here.
+
+-   [**Practical 1 Solutions**](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_1/Solution_Intro-1.pdf) can be downloaded from here.
+
+-   [*Practical 2: Objects and data handeling*](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_2/Practical_Intro-2.pdf) can be downloaded from here.
+
+-   **NOTE**: The `lbw` dataset will be needed for the practical 2. [Download it from here](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_2/lbw.csv).
+
+-   [**Practical 2 Solutions**](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_2/Solution_Intro-2.pdf) can be downloaded from here.
+
+-   [*Practical 3: Functions and control structures*](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_3/Practical_Intro-3.pdf) can be downloaded from here.
+
+-   [**Practical 3 Solutions**](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_3/Solution_Intro-3.pdf) can be downloaded from here.
+
+Other courses and their associated packages
+-------------------------------------------
+
+You can view the entire set of my courses from [my personal website](http://osmahmoud.com/R-courses/) or the [stat-courses website](https://statcourses.github.io/).

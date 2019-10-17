@@ -1,0 +1,107 @@
+---
+title: "Practical Intro-1"
+author: "Dr. Osama Mahmoud"
+date: "05/07/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = FALSE)
+```
+
+## Exercise 1:
+Data on heights, weights and gender were collected for 10 individuals in early-adulthood. The data were reported in the table below (heights measured in cm, weights in Kg and m refers to a male gender):
+
+```{r, eval=TRUE}
+DT = data.frame(id = 1:10,
+                ht=c(155, 152, 164, 175, 193, 203, 190, 183, 155, 169),
+                wt=c(80, 85, 72, 69, 86, 110, 106, 96, 90, 89),
+                gender=c("m", "m", "f", "m", "f", "f", "f", "m", "f", "m"))
+knitr::kable(DT)
+```
+  
+  a) Create vectors for height, weight and gender and assigned them to the names: `ht`; `wt`; `gender` respectively.
+  
+```{r}
+ht = c(155, 152, 164, 175, 193, 203, 190, 183, 155, 169)
+wt = c(80, 85, 72, 69, 86, 110, 106, 96, 90, 89)
+gender = c("m", "m", "f", "m", "f", "f", "f", "m", "f", "m")
+```
+
+  b) Using `ht` and `wt` vectors, creat a new variable for the BMI (Hint: BMI is calculated by dividing weight measured in Kg by the squared height measured in **meters**)
+
+```{r}
+# convert 'ht' into meters
+ht_meters = ht / 100
+# BMI calculations
+BMI = wt/(ht_meters^2)
+```
+
+  c) Show the length of the `ht` vector.
+  
+```{r}
+length(ht)
+```
+
+  d) Use R to count how many subjects with weights over 80 Kg.
+  
+```{r}
+sum(wt > 80)
+```
+
+  e) Show a frequency table for the `gender` variable (Hint: search the help for the table function by typing in `?table`)
+
+```{r}
+?table
+table(gender)
+```
+
+  f) Round the calculated BMI values to 2 decimel digits only.
+  
+```{r}
+BMI = round(BMI, digits = 2)
+```
+
+  g) Extract the BMI for the 3rd and 5th individuals.
+  
+```{r}
+BMI[c(3,5)]
+```
+
+## Exercise 2
+  a) Generate a vector x consisting of the values 0.70, 3.26, 4.48, and 5.05.
+  
+```{r}
+x = c(0.7, 3.26, 4.48, 5.05)
+```
+
+  b) Append `x` with a sequence of length 6 of equidistant values starting with 2 and ending with 9. The vector should now consist of 10 values.
+
+```{r}
+# appending 'x' with the required sequence
+x = c(x, seq(from=2, to=9, length.out=6))
+# show the length of 'x'
+length(x)
+```
+
+  c) Use x to generate three more vectors: (`x1`) represents `x` divided by 4; (`x2`) is x multiplied by 2.5; (`x3`) is `x` to the power 2.5.
+
+```{r}
+x1 = x/4
+x2 = x*2.5
+x3 = x^2.5 
+```
+
+  d) Generate a vector `y` consisting of these three vectors, `x1`, `x2` and `x3`. Make sure that `y` has a lenght 30.
+
+```{r}
+y = c(x1, x2, x3); length(y)
+```
+
+  e) Calculate the maximum, minimum, and mean of `y`.
+
+```{r}
+max(y)
+min(y)
+mean(y)
+```

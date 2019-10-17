@@ -1,0 +1,105 @@
+---
+title: "Practical Intro-2"
+author: "Dr. Osama Mahmoud"
+date: "05/07/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = FALSE)
+```
+
+## Exercise 1:
+  a) Set your working directory to a folder named `Practical Intro-2` stored at a path of your choice. Make sure that your working directory contains the data set file named `lbw.csv`.
+
+```{r, eval=FALSE}
+# to set the working directory to the parent (up-level) folder, use setwd("../")
+setwd("PATH_of_YOUR_Practical Intro-2_folder")
+```
+
+  b) Load the `lbw` dataset into your R session:
+  
+```{r}
+lbw = read.csv("lbw.csv", header = T)
+```
+
+  c) The data set `lbw` is a modified version of the Hosmer and Lemeshow data on birthweight. Its variables are as follows:
+```{r, eval=TRUE}
+lbw_desc = data.frame(Variable = c("id", "low", "age", "lwt", "race", "smoke", "ptl", "ht", "ui", "ftv", "bwt"), Description = c("Subject identification code", "Logical: birthweight < 2500g", "Maternal age at delivery (years)", "Weight at last menstrual period (Kg)", "Race", "Logical: smoked during pregnancy", "Premature labour history (count)", "Logical: maternal history of hypertension", "Logical: maternal uterine irritability", "number of visits to physician during 1st trimester", "birthweight (grams)"))
+knitr::kable(lbw_desc)
+```
+
+Now, show variable names of the `lbw` data frame.
+```{r}
+names(lbw)
+```
+
+  d) Extract data for the first 180 subjects with only the `id`, maternal age at delivery, maternal smoking and the birth weight variables included. Assign the resulted subset to an object named `Reduced.lbw`
+```{r}
+Reduced.lbw = lbw[1:180, c("id", "age", "smoke", "bwt")]
+```
+  
+  e) Add a new variable to `Reduced.lbw`, named as `yage`, to identify mothers with young age (< 19 years) at delivery.
+  
+```{r}
+Reduced.lbw$yage = Reduced.lbw$age < 19
+```
+
+  f) Find out how many mothers identified as young and smoker.
+
+```{r}
+table(Reduced.lbw$yage, Reduced.lbw$smoke) 
+```
+
+  g) Write down the names of the statistics or the role that each of these functions calculates or performs, by looking at the help file of the function:
+  
+
+```{r, echo=TRUE}
+attach(Reduced.lbw)
+mean(bwt)
+sd(bwt)
+min(age)
+max(age)
+median(bwt)
+IQR(bwt)
+range(bwt)
+summary(bwt)
+detach(Reduced.lbw)
+```
+
+```{r}
+print("attach() and detach() add and remove a data object respectively to and from the R search path making it unnecessary to specify the dataset name whenever you need to call one of its variables")
+```
+
+  h) Use one or more of the functions mentioned in the previous question to summarise the birth weight for smoker mothers and non-smoker mothers
+
+```{r}
+tapply(Reduced.lbw$bwt, INDEX = Reduced.lbw$smoke, summary)
+```
+
+  i) calculate the correlation coeficient between (`age` and `bwt`)
+
+```{r}
+cor(Reduced.lbw[["age"]], Reduced.lbw$bwt)
+```
+
+## Exercise 2:
+  a) Generate a vector `rand` consisting of 100 normally distributed values with a mean of 11 and standard deviation of 5.5 (`rand = rnorm(100, 11, 5.5)`). Make sure your vector is reproducible (i.e.repeated execution of your script should lead to identical vectors).
+
+```{r}
+set.seed(110011)
+rand = rnorm(100, 11, 5.5)
+```
+
+  b) Find out, which (if any) elements of `rand` that are less than or equal the first quartile of the emprical distribution are positive.
+
+```{r}
+(Index = which(rand <= quantile(rand, probs = 0.25) & rand > 0))
+```
+
+  c) What are the values of the elements you identified in the previous question, if any?
+
+```{r}
+rand[Index]
+```
+
