@@ -30,17 +30,17 @@ The [R reference card](https://raw.githubusercontent.com/statcourses/Intro-R/mas
 
   * [*Practical 1: Basic concepts of R*](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_1/Practical_Intro-1.pdf) can be downloaded from here.
   
-  * [**Practical 1 Solutions**](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_1/Solution_Intro-1.pdf) can be downloaded from here.
+  * **Practical 1 Solutions** ~~can be downloaded from here~~ - will be made available on `19th October 2019 at 10:45`, stay tuned!
   
   * [*Practical 2: Objects and data handeling*](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_2/Practical_Intro-2.pdf) can be downloaded from here.
   
   * **NOTE**: The `lbw` dataset will be needed for the practical 2. [Download it from here](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_2/lbw.csv).
   
-  * [**Practical 2 Solutions**](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_2/Solution_Intro-2.pdf) can be downloaded from here.
+  * **Practical 2 Solutions** ~~can be downloaded from here~~ - will be made available on `19th October 2019 at 13:45`, stay tuned!
   
   * [*Practical 3: Functions and control structures*](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_3/Practical_Intro-3.pdf) can be downloaded from here.
   
-  * [**Practical 3 Solutions**](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_3/Solution_Intro-3.pdf) can be downloaded from here.
+  * **Practical 3 Solutions** ~~can be downloaded from here~~ - will be made available on `19th October 2019 at 15:45`, stay tuned!
   
 
 ## Other courses and their associated packages
