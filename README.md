@@ -19,7 +19,7 @@ This page provides materials, practical questionas and answers of the **Introduc
 
 -   [*Practical 1: Basic concepts of R*](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_1/Practical_Intro-1.pdf) can be downloaded from here.
 
--   **Practical 1 Solutions** ~~can be downloaded from here~~ - will be made available on `19th October 2019 at 10:45`, stay tuned!
+-   [**Practical 1 Solutions**](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_1/Solution_Intro-1.pdf) can be downloaded from here.
 
 -   [*Practical 2: Objects and data handeling*](https://raw.githubusercontent.com/statcourses/Intro-R/master/Practical_2/Practical_Intro-2.pdf) can be downloaded from here.
 
